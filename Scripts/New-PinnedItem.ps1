@@ -70,7 +70,7 @@
         [parameter(Position=0,ParameterSetName='AltShortcut')]
         [parameter(Position=0,ParameterSetName='__DefaultParameterSet')]
         [string]$TargetPath,
-        [PinnedType]$Type,
+        [PinnedType]$Type = 'TaskBar',
         [parameter(ParameterSetName='AltShortcut')]
         [string]$Argument,
         [parameter(ParameterSetName='AltShortcut')]
