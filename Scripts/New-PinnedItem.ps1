@@ -67,8 +67,8 @@
         DefaultParameterSetName='__DefaultParameterSet'
     )]
     Param (
-        [parameter(Position=0,ParameterSetName='AltShortcut',Mandatory=$true)]
-        [parameter(Position=0,ParameterSetName='__DefaultParameterSet',Mandatory=$true)]
+        [parameter(Position=0,ParameterSetName='AltShortcut',Mandatory=$true,ValueFromPipeline=$true)]
+        [parameter(Position=0,ParameterSetName='__DefaultParameterSet',Mandatory=$true,ValueFromPipeline=$true)]
         [string]$TargetPath,
         [PinnedType]$Type,
         [parameter(ParameterSetName='AltShortcut')]
